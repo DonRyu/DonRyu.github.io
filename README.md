@@ -1,14 +1,9 @@
 ### Hi there <a href="https://www.gautamkrishnar.com/"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>
 This is the place where I opensource stuff and break things :rofl:
 
-- 🔭 &nbsp;I’m currently working on something cool :wink:
+- 🔭 &nbsp;I’m currently working on something cool :wink:                                 
 - 💬 &nbsp;Ask me about anything related to Javascript/Typescript or React/Express/Next
 - 👨‍💻 &nbsp;Read more about my projects at [donryu.info](https://donryu.info/)
-  
-  
-  
-  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DonRyu&theme=prussian&layout=compact&langs_count=7)
 
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:donryu1031@gmail.com)](mailto:donryu1031@gmail.com)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dongheonryu/)](https://www.linkedin.com/in/dongheonryu/)
