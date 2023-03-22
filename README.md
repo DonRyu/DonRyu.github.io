@@ -4,7 +4,6 @@
   
 👋  Hi there! I'm **Software Developer**, Don Ryu    
   
-![DonRyu's github stats](https://github-readme-stats.vercel.app/api?username=DonRyu&theme=prussian&show_icons=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DonRyu&theme=prussian&layout=compact&langs_count=7)
 
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:donryu1031@gmail.com)](mailto:donryu1031@gmail.com)
