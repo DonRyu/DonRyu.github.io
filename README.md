@@ -5,7 +5,7 @@
 ![](https://github.com/DonRyu/DonRyu/blob/main/AboutMe.png)
 
 ## About Me:
-### A collaborative and results-oriented software developer with a passion for solving complex technical challenges within a team environment
+### A collaborative and results-oriented full stack developer with a passion for solving complex technical challenges within a team environment
 
 
 
