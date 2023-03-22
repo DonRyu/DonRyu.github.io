@@ -2,8 +2,8 @@
 This is the place where I opensource stuff and break things :rofl:
 
 - 🔭 &nbsp;I’m currently working on something cool :wink:
-- 💬 &nbsp;Ask me about anything related to Javascript/Typescript/Python or Angular/React/Express/Flask
-- 👨‍💻 &nbsp;Read more about my projects at [gautamkrishnar.com](https://www.gautamkrishnar.com/#portfolio)
+- 💬 &nbsp;Ask me about anything related to Javascript/Typescript or React/Express/Next
+- 👨‍💻 &nbsp;Read more about my projects at [donryu.info](https://donryu.info/)
   
   
   
