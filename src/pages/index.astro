@@ -3,13 +3,16 @@ import Card from '@/components/Card'
 import Hobby from '@/components/Hobby'
 import Intro from '@/components/Intro'
 import Learning from '@/components/Learning'
+import ListPosts from '@/components/ListPosts'
 import MyLinks from '@/components/MyLinks'
 import Projects from '@/components/Projects'
 import Quote from '@/components/Quote'
 import Reading from '@/components/Reading'
 import BaseLayout from '@/layouts/BaseLayout'
 import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
 // import avatar from '../assets/images/avatar.png'
+const posts = await getCollection('blog')
 ---
 
 <BaseLayout title='Home'>
@@ -18,30 +21,23 @@ import { Image } from 'astro:assets'
 	>
 	</div>
 	<div
-		class='text-black dark:text-white m-auto grid gap-2 max-w-6xl overflow-hidden relative w-full p-4 sm:gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 
-		lg:gap-3 lg:max-h-[1000px] pt-0'
+		class='text-black dark:text-white m-auto grid gap-2 max-w-6xl overflow-hidden relative w-full p-4 sm:gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4
+		lg:gap-3  pt-0'
 	>
 		<Card
 			class='col-span-1 md:col-span-3 md:row-span-2 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600'
 		>
-
 			<Intro />
 		</Card>
 		<Card
 			class='col-span-1 md:col-span-1 md:row-span-1 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600'
 		>
-		<MyLinks />
-		</Card>
-
-		<Card
-			class='col-span-1 md:col-span-1 md:row-span-3 hover:border-green-600 dark:hover:border-green-600'
-		>
-			<Hobby />
+			<MyLinks />
 		</Card>
 		<Card
-			class='col-span-1 md:col-span-2 md:row-span-2 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
+			class='col-span-1 md:col-span-4 md:row-span-2 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
 		>
-			<Projects />
+			<ListPosts posts={posts} />
 		</Card>
 		<Card
 			class='col-span-1 md:col-span-1 md:row-span-1 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
