@@ -4,6 +4,7 @@ import Hobby from '@/components/Hobby'
 import Intro from '@/components/Intro'
 import Learning from '@/components/Learning'
 import ListPosts from '@/components/ListPosts'
+import ListProject from '@/components/ListProject'
 import MyLinks from '@/components/MyLinks'
 import Projects from '@/components/Projects'
 import Quote from '@/components/Quote'
@@ -13,6 +14,7 @@ import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 // import avatar from '../assets/images/avatar.png'
 const posts = await getCollection('blog')
+const p_posts = await getCollection('project')
 ---
 
 <BaseLayout title='Home'>
@@ -37,13 +39,13 @@ const posts = await getCollection('blog')
 		<Card
 			class='col-span-1 md:col-span-4 md:row-span-2 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
 		>
-			<ListPosts posts={posts} />
+			<ListProject posts={p_posts} />
 		</Card>
-		<Card
-			class='col-span-1 md:col-span-1 md:row-span-1 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
+		<!-- <Card
+			class='col-span-1 md:col-span-4 md:row-span-2 flex flex-col md:space-y-0 md:space-x-4 md:flex-row hover:border-purple-600 min-h-[130px]'
 		>
-			<Learning />
-		</Card>
+			<ListPosts posts={posts} />
+		</Card> -->
 	</div>
 </BaseLayout>
 

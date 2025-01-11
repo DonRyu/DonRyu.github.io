@@ -4,15 +4,14 @@ import PostCard from '@/components/PostCard'
 import { cn } from '@/utils'
 
 type Props = {
-	posts: CollectionEntry<'blog'>[]
+	posts: CollectionEntry<'project'>[]
 	FirstBig?: boolean
 }
 
 const { posts, FirstBig = false } = Astro.props
 ---
-
 <div>
-	<h2 class='text-2xl font-bold m-0'>My Posts</h2>
+	<h2 class='text-2xl font-bold m-0'>My Projects</h2>
 	<section
 		class={cn(
 			`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8 mt-3`,
