@@ -12,7 +12,7 @@ export default defineConfig({
 		}
 	},
 
-	site: 'https://mikehoang.dev/',
+	site: 'https:donRyu.github.io',
 	// Write here your website url
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
