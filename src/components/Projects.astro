@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
-import kcp from '../assets/images/kcp.png'
-import coship from '../assets/images/coship.png'
+import kcp from 'public/images/kcp.png'
+import coship from 'public/images/coship.png'
 ---
 
 <div class='flex flex-col h-full space-y-6'>
@@ -18,7 +18,9 @@ import coship from '../assets/images/coship.png'
 				class='bg-blue-400 dark:bg-slate-300 rounded-md w-auto max-h-[200px] md:max-h-[150px] object-contain'
 				alt={`Don Ryu avatar`}
 			/>
-			<a href='https://github.com/pilcrowOnPaper/arctic'>Concrete pump sales website</a>
+			<a href='https://github.com/pilcrowOnPaper/arctic'
+				>Concrete pump sales website</a
+			>
 		</div>
 		<div class='flex justify-start items-center space-x-3 hover:text-blue-500'>
 			<Image
@@ -31,8 +33,9 @@ import coship from '../assets/images/coship.png'
 				class='bg-blue-400 dark:bg-slate-300 rounded-md w-auto max-h-[200px] md:max-h-[150px] object-contain'
 				alt={`Don Ryu avatar`}
 			/>
-			<a href='https://github.com/pilcrowOnPaper/arctic'>Shipping company website </a>
+			<a href='https://github.com/pilcrowOnPaper/arctic'
+				>Shipping company website
+			</a>
 		</div>
-
 	</div>
 </div>

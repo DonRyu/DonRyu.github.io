@@ -12,7 +12,7 @@ import Reading from '@/components/Reading'
 import BaseLayout from '@/layouts/BaseLayout'
 import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
-// import avatar from '../assets/images/avatar.png'
+// import avatar from 'public/images/avatar.png'
 const posts = await getCollection('blog')
 const p_posts = await getCollection('project')
 ---
