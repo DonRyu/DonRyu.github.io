@@ -10,7 +10,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
 	author: 'Don Ryu',
-	title: 'Don Ryu - Software Developer',
+	title: 'Don Ryu',
 	description:
 		'Don Ryu is a software developer with a passion for creating innovative web applications, who always strive to make the complex seem effortless.',
 	lang: 'en-GB',
