@@ -19,7 +19,6 @@ const { posts, FirstBig = false } = Astro.props
 			FirstBig && `md:[&>*:first-child]:col-span-2`
 		)}
 	>
-	{console.log('posts',posts)}
 		{
 			posts.sort((a, b) => a.data.idx - b.data.idx).map(async (post) => {
 				const { remarkPluginFrontmatter } = await post.render()
