@@ -20,20 +20,69 @@ const { title, description, image, articleDate } = Astro.props
 		/>
 		<ProviderTheme />
 		<ProviderAnimations />
+		<style>
+			#loader {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: white;
+				z-index: 9999;
+			}
+
+			.spinner {
+				width: 50px;
+				height: 50px;
+				border: 6px solid #ccc;
+				border-top-color: #333;
+				border-radius: 50%;
+				animation: spin 1s linear infinite;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+
+			#content {
+				display: none;
+			}
+		</style>
 	</head>
 
 	<body
 		class='bg-white text-stone-950 dark:bg-[#0a0910] dark:text-white w-full h-full'
 	>
-		<main
-			class='relative px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-4 antialiased md:max-w-6xl grid gap-7 mt-4 overflow-hidden md:overflow-visible'
-		>
-			<Header />
-			<slot />
-			<Footer />
-		</main>
-		<GoogleAnalytics id='G-ERKX6RT5L3' />
-		<TwSizeIndicator />
-		<EditBlog />
+		<div id='loader'>
+			<div class='spinner'></div>
+		</div>
+
+		<div id='content'>
+			<main
+				class='relative px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-4 antialiased md:max-w-6xl grid gap-7 mt-4 overflow-hidden md:overflow-visible'
+			>
+				<Header />
+				<slot />
+				<Footer />
+			</main>
+			<GoogleAnalytics id='G-ERKX6RT5L3' />
+			<TwSizeIndicator />
+			<EditBlog />
+		</div>
+
+		<script>
+			window.addEventListener('load', () => {
+				const loader = document.getElementById('loader')
+				const content = document.getElementById('content')
+				if (loader && content) {
+					loader.style.display = 'none'
+					content.style.display = 'block'
+				}
+			})
+		</script>
 	</body>
 </html>
